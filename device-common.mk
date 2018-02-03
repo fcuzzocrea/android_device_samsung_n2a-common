@@ -56,6 +56,9 @@ PRODUCT_COPY_FILES += \
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
 
+# Shipping API level
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_k.mk)
+
 # Inherit from universal5420-common
 $(call inherit-product, device/samsung/universal5420-common/device-common.mk)
 
