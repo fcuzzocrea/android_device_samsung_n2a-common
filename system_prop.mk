@@ -14,23 +14,6 @@
 # limitations under the License.
 #
 
-PRODUCT_CHARACTERISTICS := tablet
-
-DEVICE_PATH := device/samsung/n2a-common
-
-# Bluetooth
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/bluetooth/bt_vendor.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/bluetooth/bt_vendor.conf
-
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2560
-TARGET_SCREEN_WIDTH := 1600
-
-# Properties
--include $(LOCAL_PATH)/system_prop.mk
-
-# Inherit from universal5420-common
-$(call inherit-product, device/samsung/universal5420-common/device-common.mk)
-
-# call the proprietary setup
-$(call inherit-product-if-exists, vendor/samsung/n2a-common/v1a-common-vendor.mk)
+# Graphics
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density=320
