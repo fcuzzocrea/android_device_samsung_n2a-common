@@ -19,6 +19,9 @@ include device/samsung/universal5420-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/samsung/n2a-common
 
+# Include path
+TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
