@@ -22,5 +22,9 @@ DEVICE_PATH := device/samsung/n2a-common
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/bluetooth/bt_vendor.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/bluetooth/bt_vendor.conf
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2560
+TARGET_SCREEN_WIDTH := 1600
+
 # Inherit from universal5420-common
 $(call inherit-product, device/samsung/universal5420-common/device-common.mk)
