@@ -18,6 +18,9 @@ PRODUCT_CHARACTERISTICS := tablet
 
 DEVICE_PATH := device/samsung/n2a-common
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/audio/mixer_paths_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_0.xml
