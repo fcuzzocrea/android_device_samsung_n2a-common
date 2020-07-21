@@ -21,7 +21,8 @@ DEVICE_PATH := device/samsung/n2a-common
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    device/samsung/n2a-common/overlay/lineage-sdk
+    device/samsung/n2a-common/overlay/lineage-sdk \
+    device/samsung/n2a-common/overlay/hardware/samsung/AdvancedDisplay
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := xlarge
