@@ -31,5 +31,9 @@ TARGET_SCREEN_DENSITY := 320
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
+# Shims
+TARGET_LD_SHIM_LIBS += \
+    /vendor/bin/gpsd|/vendor/lib/libshim_dmitry_gps.so
+
 # Inherit from the proprietary version
 -include vendor/samsung/n2a-common/BoardConfigVendor.mk

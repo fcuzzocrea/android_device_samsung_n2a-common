@@ -59,6 +59,10 @@ PRODUCT_COPY_FILES += \
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
 
+# Shims
+PRODUCT_PACKAGES += \
+    libshim_dmitry_gps
+
 # Shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_k.mk)
 
